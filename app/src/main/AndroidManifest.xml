@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.event.EventActivity" />
+        <activity android:name=".ui.eventCreate.EventCreateActivity" />
+        <activity android:name=".ui.userEdit.UserEditActivity" />
+        <activity android:name=".ui.userList.UserListActivity"></activity>
     </application>
 
 </manifest>

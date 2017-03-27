@@ -1,25 +1,21 @@
-package com.example.mobsoft.mobsoft.ui.main;
+package com.example.mobsoft.mobsoft.ui.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.mobsoft.mobsoft.MobSoftApplication;
 import com.example.mobsoft.mobsoft.R;
-import android.widget.Toast;
-
-import java.util.List;
 
 import javax.inject.Inject;
 
-public class MainActivity extends AppCompatActivity implements MainScreen {
-
+public class LoginActivity extends AppCompatActivity implements LoginScreen {
     @Inject
-    MainPresenter mainPresenter;
+    LoginPresenter loginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         MobSoftApplication.injector.inject(this);
     }
@@ -27,23 +23,22 @@ public class MainActivity extends AppCompatActivity implements MainScreen {
     @Override
     protected void onStart() {
         super.onStart();
-        mainPresenter.attachScreen(this);
+        loginPresenter.attachScreen(this);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mainPresenter.detachScreen();
+        loginPresenter.detachScreen();
     }
 
     @Override
     public void showMessage(String text) {
-        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
-    public void listEvents(List<String> events) {
+    public void navigateToMain() {
 
     }
-
 }
