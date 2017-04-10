@@ -1,5 +1,7 @@
 package com.example.mobsoft.mobsoft;
 
+import com.example.mobsoft.mobsoft.interactor.event.EventsInteractor;
+import com.example.mobsoft.mobsoft.interactor.user.UsersInteractor;
 import com.example.mobsoft.mobsoft.ui.UIModule;
 import com.example.mobsoft.mobsoft.ui.event.EventActivity;
 import com.example.mobsoft.mobsoft.ui.eventCreate.EventCreateActivity;
@@ -25,4 +27,7 @@ public interface MobSoftApplicationComponent {
     void inject(EventCreateActivity eventCreateActivity);
     void inject(UserEditActivity userEditActivity);
     void inject(UserListActivity userListActivity);
+    void inject(EventsInteractor eventsInteractor);
+    void inject(UsersInteractor usersInteractor);
+
 }
