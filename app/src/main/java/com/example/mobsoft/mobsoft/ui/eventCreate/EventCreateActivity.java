@@ -33,4 +33,9 @@ public class EventCreateActivity extends AppCompatActivity implements EventCreat
     public void showEvent() {
 
     }
+
+    @Override
+    public void showMessage(String title) {
+
+    }
 }

@@ -6,4 +6,5 @@ package com.example.mobsoft.mobsoft.ui.eventCreate;
 
 public interface EventCreateScreen {
     void showEvent();
+    void showMessage(String title);
 }

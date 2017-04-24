@@ -7,4 +7,6 @@ package com.example.mobsoft.mobsoft.ui.event;
 public interface EventScreen {
     void navigateToUser();
     void getEvent(int id);
+    void showMessage(String text);
+
 }

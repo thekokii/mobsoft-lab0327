@@ -2,6 +2,7 @@ package com.example.mobsoft.mobsoft.ui.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.mobsoft.mobsoft.MobSoftApplication;
 import com.example.mobsoft.mobsoft.R;
@@ -34,7 +35,7 @@ public class LoginActivity extends AppCompatActivity implements LoginScreen {
 
     @Override
     public void showMessage(String text) {
-
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -46,7 +46,7 @@ public class UsersInteractor {
         }
     }
 
-    public void getEvent(Long id) {
+    public void getUser(Long id) {
         GetUserEvent event = new GetUserEvent();
         try {
             User ev = repository.getUser(id);

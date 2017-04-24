@@ -22,4 +22,9 @@ public class EventActivity extends AppCompatActivity implements EventScreen {
     public void getEvent(int id) {
 
     }
+
+    @Override
+    public void showMessage(String text) {
+
+    }
 }
