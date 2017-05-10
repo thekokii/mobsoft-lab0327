@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.example.mobsoft.mobsoft.ui.main.MainPresenter;
 import com.example.mobsoft.mobsoft.utils.UiExecutor;
+import com.example.mobsoft.mobsoft.ui.UIModule;
 
 import java.util.concurrent.Executor;
 

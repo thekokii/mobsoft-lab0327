@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b7d4222b20e5a7fcce05dbd24b9267f14274d78e" />
         <activity android:name=".ui.login.LoginActivity" />
         <activity android:name=".ui.event.EventActivity" />
         <activity android:name=".ui.eventCreate.EventCreateActivity" />
@@ -23,4 +26,5 @@
         <activity android:name=".ui.userList.UserListActivity"></activity>
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

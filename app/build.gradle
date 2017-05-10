@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
 // Assists in working with annotation processors for Android Studio.
 apply plugin: 'com.neenbedankt.android-apt'
 
@@ -49,4 +50,21 @@ dependencies {
     //JVM Test
     //JUnit
     testCompile 'junit:junit:4.12'
+
+    //Robolectric
+    testCompile('org.robolectric:shadows-support-v4:3.0-rc3') {
+        exclude group: 'commons-logging', module: 'commons-logging'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+
+
+    //Mockito
+    testCompile "org.mockito:mockito-core:1.10.19"
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    compile 'com.google.android.gms:play-services-analytics:10.2.4'
+
 }
+
+apply plugin: 'com.google.gms.google-services'

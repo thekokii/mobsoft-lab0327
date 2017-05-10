@@ -28,6 +28,7 @@ import dagger.Component;
 @Singleton
 @Component(modules = {UIModule.class, RepositoryModule.class, InteractorModule.class, NetworkModule.class})
 public interface MobSoftApplicationComponent {
+    void inject(MobSoftApplication mobSoftApplication);
     void inject(MainActivity mainActivity);
     void inject(LoginActivity loginActivity);
     void inject(EventActivity eventActivity);

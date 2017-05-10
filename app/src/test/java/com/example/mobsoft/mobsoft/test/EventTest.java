@@ -5,15 +5,21 @@ import com.example.mobsoft.mobsoft.ui.main.MainPresenter;
 import com.example.mobsoft.mobsoft.ui.main.MainScreen;
 import com.example.mobsoft.mobsoft.utils.RobolectricDaggerTestRunner;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentCaptor;
+import org.mockito.internal.verification.Times;
+import org.robolectric.annotation.Config;
 
 import java.util.List;
 
 import static com.example.mobsoft.mobsoft.TestHelper.setTestInjector;
 import static com.google.common.base.Verify.verify;
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.internal.verification.VerificationModeFactory.times;
 
 /**
  * Created by mobsoft on 2017. 04. 24..
@@ -21,7 +27,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(RobolectricDaggerTestRunner.class)
 @Config(constants = BuildConfig.class, sdk = 21)
-public class TodoTest {
+public class EventTest {
 
     private MainPresenter mianPresenter;
 
@@ -32,7 +38,7 @@ public class TodoTest {
     }
 
     @Test
-    public void testTodo() {
+    public void testEvent() {
         MainScreen mainScreen = mock(MainScreen.class);
         mianPresenter.attachScreen(mainScreen);
         mianPresenter.getEvents();
@@ -44,6 +50,8 @@ public class TodoTest {
         assertEquals("todo one", capturedTodos.get(0));
         assertEquals("todo two", capturedTodos.get(1));
     }
+
+
 
     @After
     public void tearDown() {

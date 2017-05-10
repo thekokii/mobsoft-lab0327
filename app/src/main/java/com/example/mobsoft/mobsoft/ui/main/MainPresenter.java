@@ -55,7 +55,7 @@ public class MainPresenter extends Presenter<MainScreen> {
         super.detachScreen();
     }
 
-
+/*
     public void getEvents() {
 
         executor.execute(new Runnable() {
@@ -64,7 +64,7 @@ public class MainPresenter extends Presenter<MainScreen> {
                 eventsInteractor.getEvents();
             }
         });
-    }
+    }*/
 
     public void onEventMainThread(GetEventsEvent event) {
         Log.d("test","test");

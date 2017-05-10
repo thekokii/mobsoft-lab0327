@@ -1,14 +1,14 @@
 package com.example.mobsoft.mobsoft.model;
 
-import java.util.Objects;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+//import java.util.Objects;
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
 
-import com.google.gson.annotations.SerializedName;
-
-
+//import com.google.gson.annotations.SerializedName;
 
 
+
+/*
 @ApiModel(description = "")
 public class Credentials   {
   
@@ -23,6 +23,7 @@ public class Credentials   {
   /**
    * Username
    **/
+/*
   @ApiModelProperty(value = "Username")
   public String getUser() {
     return user;
@@ -35,6 +36,7 @@ public class Credentials   {
   /**
    * Password
    **/
+/*
   @ApiModelProperty(value = "Password")
   public String getPassword() {
     return password;
@@ -78,6 +80,7 @@ public class Credentials   {
    * Convert the given object to string with each line indented by 4 spaces
    * (except the first line).
    */
+/*
   private String toIndentedString(Object o) {
     if (o == null) {
       return "null";
@@ -85,3 +88,4 @@ public class Credentials   {
     return o.toString().replace("\n", "\n    ");
   }
 }
+*/

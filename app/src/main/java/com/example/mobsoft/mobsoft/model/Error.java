@@ -1,14 +1,14 @@
 package com.example.mobsoft.mobsoft.model;
 
-import java.util.Objects;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+//import java.util.Objects;
+//import io.swagger.annotations.ApiModel;
+//import io.swagger.annotations.ApiModelProperty;
 
-import com.google.gson.annotations.SerializedName;
-
-
+//import com.google.gson.annotations.SerializedName;
 
 
+
+/*
 @ApiModel(description = "")
 public class Error   {
   
@@ -25,6 +25,7 @@ public class Error   {
   
   /**
    **/
+/*
   @ApiModelProperty(value = "")
   public Integer getCode() {
     return code;
@@ -36,6 +37,7 @@ public class Error   {
   
   /**
    **/
+/*
   @ApiModelProperty(value = "")
   public String getMessage() {
     return message;
@@ -47,6 +49,7 @@ public class Error   {
   
   /**
    **/
+/*
   @ApiModelProperty(value = "")
   public String getFields() {
     return fields;
@@ -92,10 +95,11 @@ public class Error   {
    * Convert the given object to string with each line indented by 4 spaces
    * (except the first line).
    */
+/*
   private String toIndentedString(Object o) {
     if (o == null) {
       return "null";
     }
     return o.toString().replace("\n", "\n    ");
   }
-}
+}*/

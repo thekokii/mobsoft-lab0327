@@ -11,13 +11,16 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.List;
-
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity implements MainScreen {
 
     @Inject
     MainPresenter mainPresenter;
+
+    private Tracker mTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements MainScreen {
                 mainPresenter.getEvents();
             }
         });
+
+        // Obtain the shared Tracker instance.
+        MobSoftApplication application = (MobSoftApplication) getApplication();
+        mTracker = application.getDefaultTracker();
     }
 
     @Override
@@ -46,6 +53,12 @@ public class MainActivity extends AppCompatActivity implements MainScreen {
     protected void onStop() {
         super.onStop();
         mainPresenter.detachScreen();
+        mTracker.setScreenName("Image~MainActivity");
+        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
+    }
+
+    public void forceCrash(View view) {
+        throw new RuntimeException("This is a crash");
     }
 
     @Override

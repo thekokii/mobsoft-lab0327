@@ -1,5 +1,8 @@
 package com.example.mobsoft.mobsoft;
 
+import org.robolectric.RuntimeEnvironment;
+import org.robolectric.shadows.ShadowLog;
+
 /**
  * Created by mobsoft on 2017. 04. 24..
  */
