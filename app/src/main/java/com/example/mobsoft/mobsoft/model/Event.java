@@ -1,5 +1,7 @@
 package com.example.mobsoft.mobsoft.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 /**
@@ -8,6 +10,7 @@ import java.util.Date;
 
 public class Event {
     private Long id = null;
+    @SerializedName("title")
     private String title = null;
     private Date date = null;
     private String address = null;

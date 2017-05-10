@@ -6,6 +6,7 @@ import com.example.mobsoft.mobsoft.interactor.event.events.GetEventsEvent;
 import com.example.mobsoft.mobsoft.interactor.event.events.RemoveEventEvent;
 import com.example.mobsoft.mobsoft.interactor.event.events.SaveEventEvent;
 import com.example.mobsoft.mobsoft.model.Event;
+import com.example.mobsoft.mobsoft.network.event.EventApi;
 import com.example.mobsoft.mobsoft.repository.Repository;
 
 import java.util.List;
@@ -24,6 +25,9 @@ public class EventsInteractor {
     Repository repository;
     @Inject
     EventBus bus;
+
+    @Inject
+    EventApi eventApi;
 
     public EventsInteractor() {
         MobSoftApplication.injector.inject(this);
