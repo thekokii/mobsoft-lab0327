@@ -33,6 +33,14 @@ public class MainPresenter extends Presenter<MainScreen> {
     public MainPresenter() {
     }
 
+    public void getEvents() {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                eventsInteractor.getEvents();
+            }
+        });
+    }
 
     @Override
     public void attachScreen(MainScreen screen) {

@@ -11,6 +11,12 @@ import com.example.mobsoft.mobsoft.ui.UIModule;
 public class MobSoftApplication extends Application {
     public static MobSoftApplicationComponent injector;
 
+    public void setInjector(MobSoftApplicationComponent appComponent) {
+        injector = appComponent;
+        injector.inject(this);
+        repository.open(getApplicationContext());
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();

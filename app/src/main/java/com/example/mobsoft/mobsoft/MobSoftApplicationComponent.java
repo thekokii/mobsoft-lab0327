@@ -3,6 +3,7 @@ package com.example.mobsoft.mobsoft;
 import com.example.mobsoft.mobsoft.interactor.InteractorModule;
 import com.example.mobsoft.mobsoft.interactor.event.EventsInteractor;
 import com.example.mobsoft.mobsoft.interactor.user.UsersInteractor;
+import com.example.mobsoft.mobsoft.network.NetworkModule;
 import com.example.mobsoft.mobsoft.repository.RepositoryModule;
 import com.example.mobsoft.mobsoft.ui.UIModule;
 import com.example.mobsoft.mobsoft.ui.event.EventActivity;
@@ -25,7 +26,7 @@ import dagger.Component;
  */
 
 @Singleton
-@Component(modules = {UIModule.class, RepositoryModule.class, InteractorModule.class})
+@Component(modules = {UIModule.class, RepositoryModule.class, InteractorModule.class, NetworkModule.class})
 public interface MobSoftApplicationComponent {
     void inject(MainActivity mainActivity);
     void inject(LoginActivity loginActivity);
