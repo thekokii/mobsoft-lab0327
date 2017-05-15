@@ -10,7 +10,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import com.example.mobsoft.mobsoft.network.event.EventApi;
-import com.example.mobsoft.mobsoft.network.login.LoginApi;
+//import com.example.mobsoft.mobsoft.network.login.LoginApi;
 import com.example.mobsoft.mobsoft.utils.GsonHelper;
 import okhttp3.OkHttpClient;
 import retrofit2.GsonConverterFactory;
@@ -44,11 +44,11 @@ public class NetworkModule {
     public EventApi provideEventApi(Retrofit retrofit) {
         return retrofit.create(EventApi.class);
     }
-
+/*
     @Provides
     @Singleton
     public LoginApi provideLoginApi(Retrofit retrofit) {
         return retrofit.create(LoginApi.class);
     }
-
+*/
 }

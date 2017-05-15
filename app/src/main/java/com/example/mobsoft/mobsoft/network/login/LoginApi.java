@@ -4,7 +4,7 @@ package com.example.mobsoft.mobsoft.network.login;
  * Created by mobsoft on 2017. 04. 24..
  */
 
-import com.example.mobsoft.mobsoft.model.Credentials;
+//import com.example.mobsoft.mobsoft.model.Credentials;
 
 
 
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/*
 public interface LoginApi {
 
     /**
@@ -27,11 +27,10 @@ public interface LoginApi {
      * @param credentials Credentials of user
      * @return Call<Void>
      */
-
+/*
     @POST("login")
     Call<Void> loginPost(
             @Body Credentials credentials
     );
-
-
 }
+*/

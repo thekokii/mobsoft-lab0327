@@ -40,6 +40,5 @@ public interface MobSoftApplicationComponent {
     void inject(MainPresenter mainPresenter);
     void inject(EventPresenter eventPresenter);
     void inject(EventCreatePresenter eventCreatePresenter);
-    void inject(LoginPresenter loginPresenter);
 
 }

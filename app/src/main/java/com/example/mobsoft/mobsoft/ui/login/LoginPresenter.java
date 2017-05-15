@@ -38,7 +38,7 @@ public class LoginPresenter extends Presenter<LoginScreen> {
     @Override
     public void attachScreen(LoginScreen screen) {
         super.attachScreen(screen);
-        injector.inject(this);
+        //injector.inject(this);
         super.attachScreen(screen);
     }
 

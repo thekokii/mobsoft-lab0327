@@ -2,7 +2,7 @@ package com.example.mobsoft.mobsoft.mock;
 
 import com.example.mobsoft.mobsoft.network.NetworkModule;
 import com.example.mobsoft.mobsoft.network.event.EventApi;
-import com.example.mobsoft.mobsoft.network.login.LoginApi;
+//import com.example.mobsoft.mobsoft.network.login.LoginApi;
 
 import java.io.IOException;
 
@@ -59,9 +59,11 @@ public class MockNetworkModule {
         return networkModule.provideEventApi(retrofit);
     }
 
+    /*
     @Provides
     @Singleton
     public LoginApi provideLoginApi(Retrofit retrofit) {
         return networkModule.provideLoginApi(retrofit);
     }
+    */
 }

@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements MainScreen {
         mTracker = application.getDefaultTracker();
     }
 
+
     @Override
     protected void onStart() {
         super.onStart();
